@@ -1,0 +1,128 @@
+.hero {
+  background-color: var(--color-main);
+  min-height: 100vh;
+  padding: 5rem 2.5rem 4rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.hero-photo-col {
+  flex-shrink: 0;
+}
+
+.hero-photo {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--color-secondary);
+  box-shadow: 0 8px 32px rgba(10, 20, 30, 0.35);
+}
+
+.hero-text-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-name {
+  font-family: var(--font-heading);
+  font-size: clamp(3rem, 8vw, 5.5rem);
+  font-weight: 700;
+  color: var(--color-accent);
+  line-height: 1.05;
+}
+
+.hero-title {
+  font-size: 1rem;
+  color: var(--color-third);
+  margin-top: 0.5rem;
+  font-family: var(--font-body);
+}
+
+.hero-bio {
+  font-size: 0.95rem;
+  color: rgba(247, 248, 240, 0.75);
+  max-width: 520px;
+  margin-top: 1.5rem;
+  line-height: 1.8;
+  font-family: var(--font-body);
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.hero-btn-primary,
+.hero-btn-secondary {
+  display: inline-block;
+  padding: 0.75rem 1.75rem;
+  border-radius: 6px;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.hero-btn-primary {
+  background: var(--color-accent);
+  color: var(--color-main);
+  border: none;
+}
+
+.hero-btn-primary:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.hero-btn-secondary {
+  background: transparent;
+  color: var(--color-accent);
+  border: 1.5px solid var(--color-secondary);
+}
+
+.hero-btn-secondary:hover {
+  opacity: 0.85;
+  transform: translateY(-1px);
+}
+
+.hero-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 2.5rem;
+}
+
+.hero-tag {
+  background: rgba(156, 213, 255, 0.12);
+  color: var(--color-third);
+  border: 1px solid rgba(156, 213, 255, 0.25);
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-family: var(--font-body);
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 4rem 1.25rem 3rem;
+  }
+
+  .hero-name {
+    font-size: 2.8rem;
+  }
+
+  .hero-photo {
+    width: 150px;
+    height: 150px;
+  }
+}

@@ -1,0 +1,78 @@
+/* Section shell */
+.projects {
+  background-color: var(--color-dark);
+  padding: 5rem 2.5rem 4rem;
+}
+
+.projects-header {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: 2.5rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.section-heading {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-third);
+  margin-bottom: 0.25rem;
+}
+
+.section-sub {
+  font-size: 0.9rem;
+  color: var(--color-muted);
+}
+
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  max-width: 75%;
+  margin: 0 auto;
+}
+
+/* Shared card primitives */
+.tech-tag {
+  background: rgba(156, 213, 255, 0.2);
+  color: var(--color-main);
+  font-size: 0.75rem;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-family: var(--font-body);
+}
+
+.featured-badge {
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: var(--color-secondary);
+  font-family: var(--font-body);
+}
+
+.project-links a {
+  color: var(--color-muted);
+  font-size: 1.1rem;
+  transition: color 0.2s ease;
+}
+
+.project-links a:hover {
+  color: var(--color-main);
+}
+
+@media (max-width: 768px) {
+  .projects {
+    padding: 4rem 1.25rem 3rem;
+  }
+
+  .projects-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .projects-list {
+    max-width: 100%;
+  }
+}

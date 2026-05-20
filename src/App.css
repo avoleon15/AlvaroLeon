@@ -1,0 +1,14 @@
+.edu-certs-row {
+  display: flex;
+  align-items: flex-start;
+}
+
+.edu-certs-row > * {
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .edu-certs-row {
+    flex-direction: column;
+  }
+}

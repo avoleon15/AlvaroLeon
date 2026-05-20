@@ -1,0 +1,36 @@
+:root {
+  --color-main:      #355872;
+  --color-secondary: #7AAACE;
+  --color-third:     #9CD5FF;
+  --color-accent:    #F7F8F0;
+  --color-dark:      #1A2E3D;
+  --color-mid:       #2C4A5E;
+  --color-muted:     #6A8FA8;
+  --font-heading:    'Manrope', sans-serif;
+  --font-body:       'Inter', sans-serif;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--color-accent);
+  color: var(--color-dark);
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-heading);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
