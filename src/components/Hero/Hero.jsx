@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { useLang } from '../../context/LanguageContext';
+import { assetUrl } from '../../utils/assetUrl';
 import './Hero.css';
 
 const fadeUp = {
@@ -28,7 +29,7 @@ export default function Hero() {
         animate="visible"
         custom={0}
       >
-        <img src={hero.photo} alt="Alvaro Leon" className="hero-photo" />
+        <img src={assetUrl(hero.photo)} alt="Alvaro Leon" className="hero-photo" />
       </motion.div>
 
       <div className="hero-text-col">

@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { useLang } from '../../context/LanguageContext';
+import { assetUrl } from '../../utils/assetUrl';
 import './Certifications.css';
 
 const fadeUp = {
@@ -33,7 +34,7 @@ export default function Certifications() {
             viewport={{ once: true, amount: 0.2 }}
           >
             <div className="entry-logo">
-              {cert.logo && <img src={cert.logo} alt={cert.issuer} />}
+              {cert.logo && <img src={assetUrl(cert.logo)} alt={cert.issuer} />}
             </div>
             <div className="timeline-content">
               <h3 className="cert-title">{cert.title}</h3>

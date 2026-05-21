@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { useLang } from '../../context/LanguageContext';
+import { assetUrl } from '../../utils/assetUrl';
 import './Education.css';
 
 const fadeUp = {
@@ -33,7 +34,7 @@ export default function Education() {
             viewport={{ once: true, amount: 0.2 }}
           >
             <div className="entry-logo">
-              {entry.logo && <img src={entry.logo} alt={entry.institution} className={entry.logoContain ? 'logo-contain' : ''} />}
+              {entry.logo && <img src={assetUrl(entry.logo)} alt={entry.institution} className={entry.logoContain ? 'logo-contain' : ''} />}
             </div>
             <div className="timeline-content">
               <h3 className="edu-institution">{entry.institution}</h3>

@@ -2,7 +2,11 @@
   "permissions": {
     "allow": [
       "Bash(npm run *)",
-      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:5174)"
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:5174)",
+      "Bash(mkdir -p /Users/alvaro_leon15/Desktop/Code/alvaro-cv/public/assets && mv /Users/alvaro_leon15/Desktop/Code/alvaro-cv/src/assets/* /Users/alvaro_leon15/Desktop/Code/alvaro-cv/public/assets/)"
+    ],
+    "additionalDirectories": [
+      "/Users/alvaro_leon15/Desktop/Code/alvaro-cv/src/assets"
     ]
   }
 }

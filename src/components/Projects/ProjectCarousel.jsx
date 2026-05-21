@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FiGithub, FiExternalLink, FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 import { useLang } from '../../context/LanguageContext';
+import { assetUrl } from '../../utils/assetUrl';
 import './ProjectCarousel.css';
 
 const fadeUp = {
@@ -43,7 +44,7 @@ export default function ProjectCarousel({ project }) {
               className="pcar-slide"
               style={
                 images[index].startsWith('/')
-                  ? { backgroundImage: `url(${images[index]})`, backgroundSize: 'cover', backgroundPosition: 'center' }
+                  ? { backgroundImage: `url(${assetUrl(images[index])})`, backgroundSize: 'cover', backgroundPosition: 'center' }
                   : { background: images[index] }
               }
               initial={{ opacity: 0, x: 40 }}
