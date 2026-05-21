@@ -12,7 +12,7 @@ export const ui = {
 
 export const hero = {
   name: 'Alvaro Leon',
-  title: 'Desarrollador de Software Junior — React & JavaScript',
+  title: 'Desarrollador de Software Junior',
   bio: '¡Hola! Soy Alvaro, estudiante de Ciencias de la Computación y desarrollador en formación que ama construir cosas para la web. Desde juegos multijugador hasta herramientas empresariales del mundo real, disfruto convirtiendo ideas en productos que sean divertidos de usar. Siempre aprendiendo, siempre construyendo.',
   tags: ['React', 'JavaScript', 'TypeScript', 'Node.js', 'Git', 'CSS', 'Python', 'Figma'],
   photo: '/assets/CValvaro.jpg',
